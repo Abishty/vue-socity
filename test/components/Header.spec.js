@@ -25,7 +25,8 @@ const factory = () => {
     },
     stubs: {
       NuxtLink: RouterLinkStub,
-      transition: transitionStub()
+      transition: transitionStub(),
+      FontAwesomeIcon: RouterLinkStub
     }
   })
 }
@@ -103,11 +104,9 @@ describe('Header', () => {
       }
     })
     const header = wrapper.find('.header-container')
-    const mainBodyWrapper = document.querySelector('.main-body-wrapper')
     window.pageYOffset = 2000
     await wrapper.vm.handleScroll()
     expect(header.classes()).toContain('sticky')
-    expect(mainBodyWrapper.classes()).toContain('pt-75')
     window.pageYOffset = 0
     await wrapper.vm.handleScroll()
     expect(header.classes()).not.toContain('sticky')

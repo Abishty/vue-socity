@@ -2,37 +2,37 @@
 
 exports[`Testing the Dropdown component it should render correctly 1`] = `
 <div id="dropdown" class="dropdown row">
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531481696/agra_dfkjrd.png" class="city-img agra">
       <p>Agra</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482060/amritsar_c8th5q.png" class="city-img amritsar">
       <p>Amritsar</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482060/andaman_tznxgy.png" class="city-img andaman">
       <p>Andaman</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1524122907/images_2Fcoorg_sivr3i.png" class="city-img coorg">
       <p>Coorg</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1524122907/images_2Fdarjeeling_ceio37.png" class="city-img darjeeling">
       <p>Darjeeling</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="current-city city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1524122907/images_2Fdelhi_kx5pck.png" class="city-img delhi">
       <p>Delhi</p>
     </div>
@@ -40,133 +40,133 @@ exports[`Testing the Dropdown component it should render correctly 1`] = `
       <p class="current-text">Current City</p>
     </div>
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482108/jaisalmer_dgv79b.png" class="city-img jaisalmer">
       <p>Jaisalmer</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482108/kasol_exgmwt.png" class="city-img kasol">
       <p>Kasol</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1524122384/leh_comp_jan0ez.png" class="city-img lehladakh">
       <p>Leh</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482108/McLeodganj_jqxezj.png" class="city-img mcleodganjanddharamshala">
       <p>McLeodganj</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482108/mussoorie_gx3xhv.png" class="city-img mussoorie">
       <p>Mussoorie</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482108/nainital_h08kab.png" class="city-img nainital">
       <p>Nainital</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/c_scale,h_146,w_100/v1525508391/nasik_xg1cm3.png" class="city-img nashik">
       <p>Nashik</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482108/ooty_bscppm.png" class="city-img ooty">
       <p>Ooty</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482108/pondicherry_a7anws.png" class="city-img pondicherry">
       <p>Pondicherry</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482108/rishikesh_gqsld7.png" class="city-img rishikesh">
       <p>Rishikesh</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482109/shillong_caaz2v.png" class="city-img shillong">
       <p>Shillong</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482109/shimla_cyir5j.png" class="city-img shimla">
       <p>Shimla</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482109/srinagar_icuqwy.png" class="city-img srinagar">
       <p>Srinagar</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482109/udaipur_akkgry.png" class="city-img udaipur">
       <p>Udaipur</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1531482109/varanasi_pxscc7.png" class="city-img varanasi">
       <p>Varanasi</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1566385937/mumbai_szovz0.png" class="city-img mumbai">
       <p>Mumbai</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1566385938/banglore_isr4lq.png" class="city-img bangalore">
       <p>Bangalore</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1566385938/pune_mrrss9.png" class="city-img pune">
       <p>Pune</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1566385937/kolkata_qxvlcv.png" class="city-img kolkata">
       <p>Kolkata</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1566385937/goa_xt63r8.png" class="city-img goa">
       <p>Goa</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1566385938/chennai_pkhuhs.png" class="city-img chennai">
       <p>Chennai</p>
     </div>
     <!---->
   </div>
-  <div class="col-md-1 text-center city-name city-choose">
+  <div class="col-md-1 col-4 text-center city-name city-choose">
     <div class="city-div"><img src="https://res.cloudinary.com/purnesh/image/upload/v1566385937/hydrabad_omrwnb.png" class="city-img hyderabad">
       <p>Hyderabad</p>
     </div>
