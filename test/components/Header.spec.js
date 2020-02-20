@@ -2,6 +2,8 @@ import { shallowMount, RouterLinkStub, createLocalVue } from '@vue/test-utils'
 import Header from '@/components/Header'
 import Dropdown from '@/components/Dropdown'
 
+const FontAwesomeIconStub = '<i class="stub"></i>'
+
 const transitionStub = () => ({
   render(h) {
     return this.$options._renderChildren
@@ -26,7 +28,7 @@ const factory = () => {
     stubs: {
       NuxtLink: RouterLinkStub,
       transition: transitionStub(),
-      FontAwesomeIcon: RouterLinkStub
+      FontAwesomeIcon: FontAwesomeIconStub
     }
   })
 }
