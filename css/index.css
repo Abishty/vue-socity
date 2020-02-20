@@ -21,3 +21,11 @@ body {
   background-color: #273142;
   transition: background-color 0.25s ease-out;
 }
+
+*::-moz-selection {
+  background-color: rgba(19,203,134,0.5);
+}
+
+*::selection {
+  background-color: rgba(19,203,134,0.5);
+}
