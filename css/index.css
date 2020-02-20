@@ -12,6 +12,12 @@ a, a:hover {
   color: #13cb86;
 }
 
-::selection {
-  background: rgba(43,183,121,0.6);
+body {
+  background-color: white;
+  transition: background-color 0.25s ease-in;
+}
+
+.dark-theme {
+  background-color: #273142;
+  transition: background-color 0.25s ease-out;
 }

@@ -413,6 +413,18 @@ export default {
   font-weight: 100;
   margin-top: 1px;
 }
+body.dark-theme .right-column-next-text {
+  color: white;
+}
+body.dark-theme .right-column-title {
+  color: white;
+}
+body.dark-theme .left-column-next-text {
+  color: white;
+}
+body.dark-theme .left-column-title {
+  color: white;
+}
 .right-column-next-text {
   color: #404040;
   font-family: 'Open Sans';
@@ -499,6 +511,10 @@ export default {
   color: #404040;
 }
 
+body.dark-theme .title-text {
+  color: white;
+}
+
 .author-info-container {
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
@@ -533,9 +549,15 @@ export default {
 .author-name {
   line-height: 2.5;
 }
+body.dark-theme .author-name {
+  color: white;
+}
 
 .publish-date {
   opacity: 0.4;
+}
+body.dark-theme .publish-date {
+  color: white;
 }
 
 .follow-btn {
@@ -553,6 +575,9 @@ export default {
   line-height: 30px;
   color: #0a0a0a;
   border-bottom: 1px solid lightgray;
+}
+body.dark-theme .article-content {
+  color: white;
 }
 .article-border {
   width: auto;
@@ -577,6 +602,9 @@ export default {
   line-height: 3.33;
   letter-spacing: normal;
   color: #404040;
+}
+body.dark-theme .next-article {
+  color: white;
 }
 .fb-container {
   width: 150px;

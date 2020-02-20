@@ -1,6 +1,7 @@
 <template>
   <div class="overFXN">
     <Header
+      v-if="isHomeroute()"
       @addPaddingTop="addPaddingTop"
       @removePaddingTop="removePaddingTop"
     />
@@ -17,7 +18,22 @@ export default {
   components: {
     Header
   },
+  data() {
+    return {
+      isHome: false
+    }
+  },
+  beforeMount() {
+    const theme = localStorage.getItem('theme')
+    if (theme === 'dark') {
+      document.body.classList.add('dark-theme')
+    }
+  },
   methods: {
+    isHomeroute() {
+      this.isHome = this.$route.name === 'index'
+      return !this.isHome
+    },
     addPaddingTop() {
       this.$refs.mainBodyWrapper.classList.add('pt-75')
     },

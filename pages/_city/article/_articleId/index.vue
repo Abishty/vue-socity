@@ -76,11 +76,11 @@ export default {
   beforeDestroy() {
     this.$nuxt.$off('pushState')
     window.removeEventListener('scroll', this.handleScroll)
-    window.onpopstate = null
+    // window.onpopstate = null
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
-    window.onpopstate = this.handlePopState
+    // window.onpopstate = this.handlePopState
   },
   middleware: 'cityCheck',
   methods: {
@@ -245,7 +245,7 @@ export default {
       }
     },
     changeURL(id, city) {
-      window.history.pushState({}, null, `/delhi/article/${id}`)
+      window.history.replaceState({}, null, `/delhi/article/${id}`)
       this.$nuxt.$emit('pushState', { city, article: id })
     },
     async handleArticleReadDone() {
