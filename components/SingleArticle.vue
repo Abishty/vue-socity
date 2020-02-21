@@ -26,7 +26,7 @@
                   :icon="['fas', 'chevron-up']"
                   class="left-column-next-icon"
                 />
-                <p class="left-column-next-text">PREV</p>
+                <p class="left-column-next-text">PRE</p>
               </div>
               <p class="left-column-title">{{ prevArticle.title }}</p>
             </div>
