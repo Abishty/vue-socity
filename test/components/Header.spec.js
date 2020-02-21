@@ -18,6 +18,7 @@ const factory = () => {
           city: 'delhi'
         }
       },
+      $router: [],
       data() {
         return {
           showDropdown: false,
@@ -112,5 +113,82 @@ describe('Header', () => {
     window.pageYOffset = 0
     await wrapper.vm.handleScroll()
     expect(header.classes()).not.toContain('sticky')
+  })
+
+  it('Should toggle the "isDark" variable in the header component', async () =>{
+    const wrapper = factory()
+    wrapper.setData({ isDark: false })
+    wrapper.find('.switch-wrap').trigger('click')
+    await wrapper.vm.$nextTick()
+    expect(wrapper.vm.isDark).toBe(true)
+    wrapper.find('.switch-wrap').trigger('click')
+    await wrapper.vm.$nextTick()
+    expect(wrapper.vm.isDark).toBe(false)
+  })
+
+  test('Should test the $route variable', () => {
+    const wrapper = factory()
+    wrapper.vm.$options.watch.$route.handler.call(wrapper.vm)
+    expect(wrapper.vm.city).toBe(wrapper.vm.$route.params.city)
+  })
+
+  test('changeCity should call toggleDropdown as well', async () => {
+    const wrapper = factory()
+    wrapper.setMethods({ toggleDropdown: jest.fn() })
+    wrapper.vm.$options.methods.changeCity.call(wrapper.vm, 'delhi')
+    await wrapper.vm.$nextTick()
+    expect(wrapper.vm.toggleDropdown).toHaveBeenCalled()
+  })
+
+  test('Should return the computed property cityName', () => {
+    const localVue = createLocalVue()
+    let wrapper = shallowMount(Header, {
+      localVue,
+      attachToDocument: true,
+      mocks: {
+        $route: {
+          params: {
+            city: 'delhi'
+          }
+        }
+      },
+      stubs: {
+        NuxtLink: RouterLinkStub,
+        transition: transitionStub()
+      }
+    })
+    expect(wrapper.vm.cityName).toBe('Delhi')
+    wrapper = shallowMount(Header, {
+      localVue,
+      attachToDocument: true,
+      mocks: {
+        $route: {
+          params: {
+            city: ''
+          }
+        }
+      },
+      stubs: {
+        NuxtLink: RouterLinkStub,
+        transition: transitionStub()
+      }
+    })
+    expect(wrapper.vm.cityName).toBe('Delhi')
+    wrapper = shallowMount(Header, {
+      localVue,
+      attachToDocument: true,
+      mocks: {
+        $route: {
+          params: {
+            city: 'agra'
+          }
+        }
+      },
+      stubs: {
+        NuxtLink: RouterLinkStub,
+        transition: transitionStub()
+      }
+    })
+    expect(wrapper.vm.cityName).toBe('Agra')
   })
 })
