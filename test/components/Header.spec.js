@@ -2,7 +2,18 @@ import { shallowMount, RouterLinkStub, createLocalVue } from '@vue/test-utils'
 import Header from '@/components/Header'
 import Dropdown from '@/components/Dropdown'
 
-const FontAwesomeIconStub = '<i class="stub"></i>'
+const FontAwesomeIconStub = {
+  name: 'font-awesome-icon',
+  props: {
+    tag: {
+      type: String,
+      default: 'i'
+    }
+  },
+  render: function render(h) {
+    return h(this.tag, undefined, undefined)
+  }
+}
 
 const transitionStub = () => ({
   render(h) {
@@ -103,7 +114,8 @@ describe('Header', () => {
       },
       stubs: {
         NuxtLink: RouterLinkStub,
-        transition: transitionStub()
+        transition: transitionStub(),
+        FontAwesomeIcon: FontAwesomeIconStub
       }
     })
     const header = wrapper.find('.header-container')
@@ -115,7 +127,7 @@ describe('Header', () => {
     expect(header.classes()).not.toContain('sticky')
   })
 
-  it('Should toggle the "isDark" variable in the header component', async () =>{
+  it('Should toggle the "isDark" variable in the header component', async () => {
     const wrapper = factory()
     wrapper.setData({ isDark: false })
     wrapper.find('.switch-wrap').trigger('click')
@@ -154,7 +166,8 @@ describe('Header', () => {
       },
       stubs: {
         NuxtLink: RouterLinkStub,
-        transition: transitionStub()
+        transition: transitionStub(),
+        FontAwesomeIcon: FontAwesomeIconStub
       }
     })
     expect(wrapper.vm.cityName).toBe('Delhi')
@@ -170,7 +183,8 @@ describe('Header', () => {
       },
       stubs: {
         NuxtLink: RouterLinkStub,
-        transition: transitionStub()
+        transition: transitionStub(),
+        FontAwesomeIcon: FontAwesomeIconStub
       }
     })
     expect(wrapper.vm.cityName).toBe('Delhi')
