@@ -4,7 +4,7 @@ jobs:
     machine:
       image: ubuntu-1604:201903-01
     steps:
-      - run: ssh circleci@157.245.107.135 -i $RSA "./deploy_project.sh"
+      - run: ssh circleci@157.245.107.135 "./deploy_project.sh"
   build:
     docker:
       - image: circleci/node:12.14.0
