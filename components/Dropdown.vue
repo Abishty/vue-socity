@@ -6,7 +6,9 @@
       class="col-md-1 col-4 text-center city-name city-choose"
     >
       <div
-        :class="city.key === $route.params.city ? 'current-city' : ''"
+        :class="
+          city.key === $route.params.city ? 'current-city city-div' : 'city-div'
+        "
         @click="handleCityClick(city.key)"
       >
         <img :src="city.img" :class="`city-img ${city.key}`" />
