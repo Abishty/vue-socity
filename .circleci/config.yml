@@ -1,6 +1,8 @@
 version: 2.1
 jobs:
   deploy:
+    machine:
+      image: ubuntu-1604:201903-01
     steps:
       - run: ssh circleci@157.245.107.135 -i $RSA "./deploy_project.sh"
   build:
