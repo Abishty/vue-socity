@@ -39,12 +39,14 @@
   </div>
 </template>
 <script>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Dropdown from './Dropdown'
 import constants from '~/constants'
 
 export default {
   components: {
-    Dropdown
+    Dropdown,
+    'font-awesome-icon': FontAwesomeIcon
   },
   data() {
     return {
