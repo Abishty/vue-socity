@@ -23,7 +23,7 @@
           <input ref="darkModeSwitch" @click="toggleDarkMode" type="checkbox" />
           <div class="switch"></div>
         </label>
-        <div class="write-a-post">Write A Post</div>
+        <div class="write-a-post">Write Post</div>
         <div class="search">
           <font-awesome-icon :icon="['fas', 'search']" />
         </div>
