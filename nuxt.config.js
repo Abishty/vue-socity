@@ -78,8 +78,12 @@ module.exports = {
           }
         ]
       }
-    ]
+    ],
+    '@nuxtjs/sentry'
   ],
+  sentry: {
+    dsn: 'https://3815235d86124e5bb56e94673fb938da@sentry.io/2814720'
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
