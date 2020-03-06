@@ -75,7 +75,7 @@ export default {
     window.addEventListener('scroll', this.handleScroll)
 
     this.handleScroll()
-    this.isDark = localStorage.getItem('theme') === 'dark'
+    this.isDark = Cookies.get('theme') === 'dark'
     this.$refs.darkModeSwitch.checked = this.isDark
   },
   methods: {
