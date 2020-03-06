@@ -23,12 +23,6 @@ export default {
       isHome: false
     }
   },
-  // beforeMount() {
-  //   const theme = localStorage.getItem('theme')
-  //   if (theme === 'dark') {
-  //     document.body.classList.add('dark-theme')
-  //   }
-  // },
   methods: {
     isHomeroute() {
       this.isHome = this.$route.name === 'index'

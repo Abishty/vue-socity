@@ -97,7 +97,7 @@ module.exports = {
    */
   axios: {
     baseURL: 'https://soapi.in:3001',
-    debug: true
+    debug: false
     // debug: !isProd
   },
   /*

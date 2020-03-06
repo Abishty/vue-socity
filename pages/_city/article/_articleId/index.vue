@@ -279,9 +279,19 @@ export default {
       this.loading = false
     }
   },
-  head() {
+  head(ctx) {
+    let bodyClass = ''
+    if (ctx.$isServer) {
+      const { req } = ctx.$root.context
+      bodyClass = req.cookies.theme === 'dark' ? 'dark-theme' : ''
+    } else {
+      bodyClass = Array.from(document.body.classList).join(' ')
+    }
     return {
-      title: this.title
+      title: this.title,
+      bodyAttrs: {
+        class: bodyClass
+      }
     }
   }
 }
