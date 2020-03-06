@@ -14,29 +14,40 @@ module.exports = {
   /*
    ** Headers of the page
    */
-  head: {
-    title: 'So city!',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
+  head(c) {
+    const { req } = c.context
+    let bodyClass = ''
+    if (req && 'cookies' in req) {
+      bodyClass = req.cookies.theme === 'dark' ? 'dark-theme' : ''
+    }
+    return {
+      title: 'So city!',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: process.env.npm_package_description || ''
+        }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        {
+          rel: 'stylesheet',
+          href:
+            'https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap'
+        },
+        {
+          rel: 'stylesheet',
+          href:
+            'https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap'
+        }
+      ],
+      bodyAttrs: {
+        class: bodyClass
       }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Crimson+Pro&display=swap'
-      },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap'
-      }
-    ]
+    }
   },
   /*
    ** Customize the progress-bar color

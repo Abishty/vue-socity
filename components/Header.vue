@@ -39,6 +39,7 @@
   </div>
 </template>
 <script>
+import Cookies from 'js-cookie'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Dropdown from './Dropdown'
 import constants from '~/constants'
@@ -83,7 +84,8 @@ export default {
     },
     toggleDarkMode() {
       this.isDark = !this.isDark
-      localStorage.setItem('theme', this.isDark ? 'dark' : 'light')
+      Cookies.set('theme', this.isDark ? 'dark' : 'light')
+      // localStorage.setItem('theme', this.isDark ? 'dark' : 'light')
       if (this.isDark) {
         document.body.classList.add('dark-theme')
       } else {
